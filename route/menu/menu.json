@@ -1,0 +1,1377 @@
+[
+    {
+        "path": "/",
+        "redirect": "/user/login"
+    },
+    {
+        "path": "/home"
+    },
+    {
+        "path": "/admin",
+        "name": "formDemo",
+        "icon": "icon-fuwenben"
+    },
+    {
+        "path": "/homeMarketing",
+        "name": "homeMarketing",
+        "icon": "home",
+        "hideInMenu": true
+    },
+    {
+        "path": "/basic",
+        "icon": "fund",
+        "name": "basic",
+        "routes": [
+            {
+                "name": "organizationalStructure",
+                "path": "/basic/organizationalStructure",
+                "routes": [
+                    {
+                        "name": "companyManagement",
+                        "path": "/basic/organizationalStructure/companyManagement"
+                    },
+                    {
+                        "name": "departmentManagement",
+                        "path": "/basic/organizationalStructure/departmentManagement"
+                    },
+                    {
+                        "name": "addDepartment",
+                        "path": "/basic/organizationalStructure/departmentManagement/add",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "editDepartment",
+                        "path": "/basic/organizationalStructure/departmentManagement/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "staffArchives",
+                        "path": "/basic/organizationalStructure/staffArchives"
+                    },
+                    {
+                        "name": "addStaffArchives",
+                        "path": "/basic/organizationalStructure/staffArchives/add",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "editStaffArchives",
+                        "path": "/basic/organizationalStructure/staffArchives/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            },
+            {
+                "name": "warehouseCenter",
+                "path": "/basic/warehouseCenter",
+                "routes": [
+                    {
+                        "name": "warehouse",
+                        "path": "/basic/warehouseCenter/warehouse"
+                    },
+                    {
+                        "name": "warehouseAdd",
+                        "hideInMenu": true,
+                        "path": "/basic/warehouseCenter/warehouse/:id"
+                    }
+                ]
+            },
+            {
+                "name": "merchantsData",
+                "path": "/basic/merchantsData",
+                "routes": [
+                    {
+                        "name": "merchantsClassify",
+                        "path": "/basic/merchantsData/merchantsClassify"
+                    },
+                    {
+                        "name": "merchantsFile",
+                        "path": "/basic/merchantsData/merchantsFile"
+                    },
+                    {
+                        "name": "merchantsAdd",
+                        "hideInMenu": true,
+                        "path": "/basic/merchantsData/merchantsFile/:id/merchantsAdd"
+                    },
+                    {
+                        "name": "merchantsEdit",
+                        "hideInMenu": true,
+                        "path": "/basic/merchantsData/merchantsFile/:id/merchantsEdit"
+                    },
+                    {
+                        "name": "merchantsAudit",
+                        "hideInMenu": true,
+                        "path": "/basic/merchantsData/merchantsFile/:id/merchantsAudit"
+                    },
+                    {
+                        "name": "merchantsUpload",
+                        "hideInMenu": true,
+                        "path": "/basic/merchantsData/merchantsFile/:id/merchantsUpload"
+                    }
+                ]
+            },
+            {
+                "name": "supplierData",
+                "path": "/basic/supplierData",
+                "routes": [
+                    {
+                        "name": "supplierProfile",
+                        "path": "/basic/supplierData/supplierProfile"
+                    },
+                    {
+                        "name": "supplierProfileAdd",
+                        "hideInMenu": true,
+                        "path": "/basic/supplierData/supplierProfile/:id/supplierProfileAdd"
+                    },
+                    {
+                        "name": "supplierProfileEdit",
+                        "hideInMenu": true,
+                        "path": "/basic/supplierData/supplierProfile/:id/supplierProfileEdit"
+                    },
+                    {
+                        "name": "supplierProfileAudit",
+                        "hideInMenu": true,
+                        "path": "/basic/supplierData/supplierProfile/:id/supplierProfileAudit"
+                    },
+                    {
+                        "name": "supplierProfileUpload",
+                        "hideInMenu": true,
+                        "path": "/basic/supplierData/supplierProfile/:id/supplierProfileUpload"
+                    },
+                    {
+                        "name": "factoryStaff",
+                        "hideInMenu": true,
+                        "path": "/basic/supplierData/factoryStaff"
+                    },
+                    {
+                        "name": "factoryStaffAdd",
+                        "hideInMenu": true,
+                        "path": "/basic/supplierData/factoryStaff/$id/factoryStaffAdd"
+                    },
+                    {
+                        "name": "factoryStaffEdit",
+                        "hideInMenu": true,
+                        "path": "/basic/supplierData/factoryStaff/:id/factoryStaffAdd"
+                    }
+                ]
+            },
+            {
+                "name": "business",
+                "path": "/basic/businessArea",
+                "routes": [
+                    {
+                        "name": "businessArea",
+                        "path": "/basic/businessArea/area"
+                    }
+                ]
+            },
+            {
+                "name": "commodityManage",
+                "path": "/basic/commodityManage",
+                "routes": [
+                    {
+                        "name": "brand",
+                        "path": "/basic/commodityManage/brand"
+                    },
+                    {
+                        "name": "editBrand",
+                        "path": "/basic/commodityManage/brand:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "addBrand",
+                        "path": "/basic/commodityManage/add",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "archives",
+                        "path": "/basic/commodityManage/archives"
+                    },
+                    {
+                        "name": "saveArchives",
+                        "path": "/basic/commodityManage/archives/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "discountRecord",
+                        "path": "/basic/commodityManage/discountRecord",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "discountRecordEdit",
+                        "path": "/basic/commodityManage/discountRecord/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "classification",
+                        "path": "/basic/commodityManage/classification"
+                    },
+                    {
+                        "name": "port",
+                        "path": "/basic/commodityManage/port"
+                    },
+                    {
+                        "name": "reason",
+                        "path": "/basic/commodityManage/reason"
+                    }
+                ]
+            },
+            {
+                "name": "servicePrice",
+                "path": "/basic/servicePrice",
+                "routes": [
+                    {
+                        "name": "compensation",
+                        "path": "/basic/servicePrice/compensation"
+                    },
+                    {
+                        "name": "editCompensation",
+                        "path": "/basic/servicePrice/compensation/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "repair",
+                        "path": "/basic/servicePrice/repair"
+                    },
+                    {
+                        "name": "editRepair",
+                        "path": "/basic/servicePrice/repair/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "parts",
+                        "path": "/basic/servicePrice/parts"
+                    }
+                ]
+            },
+            {
+                "name": "roleAdmin",
+                "path": "/basic/roleAdmin",
+                "routes": [
+                    {
+                        "name": "userRole",
+                        "path": "/basic/roleAdmin/userRole"
+                    },
+                    {
+                        "name": "setPermission",
+                        "path": "/basic/roleAdmin/setPermission"
+                    }
+                ]
+            },
+            {
+                "name": "accountManage",
+                "path": "/basic/accountManage",
+                "routes": [
+                    {
+                        "name": "account",
+                        "path": "/basic/accountManage/account"
+                    },
+                    {
+                        "name": "accountAdd",
+                        "path": "/basic/accountManage/account/:id/accountAdd",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "accountEdit",
+                        "path": "/basic/accountManage/account/:id/accountEdit",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "accountDetail",
+                        "path": "/basic/accountManage/account/:id/accountDetail",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "Authorization",
+                        "path": "/basic/accountManage/account/permission/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "theme",
+                        "path": "/basic/accountManage/account/theme/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            },
+            {
+                "name": "systemSettings",
+                "path": "/basic/systemSettings",
+                "routes": [
+                    {
+                        "name": "platformSettings",
+                        "path": "/basic/systemSettings/platformSettings"
+                    },
+                    {
+                        "name": "changePassword",
+                        "path": "/basic/systemSettings/changePassword"
+                    },
+                    {
+                        "name": "changeEmail",
+                        "path": "/basic/systemSettings/changeEmail"
+                    },
+                    {
+                        "name": "changePhoneNumber",
+                        "path": "/basic/systemSettings/changePhoneNumber"
+                    }
+                ]
+            },
+            {
+                "name": "logManagement",
+                "path": "/basic/logManagement",
+                "routes": [
+                    {
+                        "name": "log",
+                        "path": "/basic/logManagement/log"
+                    }
+                ]
+            },
+            {
+                "name": "billTemplate",
+                "path": "/basic/billTemplate",
+                "routes": [
+                    {
+                        "name": "template",
+                        "path": "/basic/billTemplate/template"
+                    }
+                ]
+            },
+            {
+                "name": "qrCode",
+                "path": "/basic/qrCode",
+                "routes": [
+                    {
+                        "name": "record",
+                        "path": "/basic/qrCode/record"
+                    },
+                    {
+                        "name": "saveQrCode",
+                        "path": "/basic/qrCode/record/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "path": "/userCenter",
+        "icon": "user",
+        "name": "userCenter",
+        "routes": [
+            {
+                "name": "userPlatform",
+                "path": "/userCenter/userPlatform",
+                "routes": [
+                    {
+                        "name": "consumerUser",
+                        "path": "/userCenter/userPlatform/consumerUser"
+                    },
+                    {
+                        "name": "AddConsumerUser",
+                        "hideInMenu": true,
+                        "path": "/userCenter/userPlatform/consumerUser/add"
+                    },
+                    {
+                        "name": "EditConsumerUser",
+                        "hideInMenu": true,
+                        "path": "/userCenter/userPlatform/consumerUser/:id"
+                    },
+                    {
+                        "name": "prepaidInformation",
+                        "path": "/userCenter/userPlatform/prepaidInformation"
+                    }
+                ]
+            },
+            {
+                "name": "merchantManagement",
+                "path": "/userCenter/merchantManagement",
+                "routes": [
+                    {
+                        "name": "merchantManagement",
+                        "path": "/userCenter/merchantManagement/merchantManagement"
+                    },
+                    {
+                        "name": "whiteList",
+                        "path": "/userCenter/merchantManagement/whiteList/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "merchantInventory",
+                        "path": "/userCenter/merchantManagement/merchantInventory"
+                    },
+                    {
+                        "name": "merchantInventoryDetail",
+                        "path": "/userCenter/merchantManagement/merchantInventory/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "bsinessAuthority",
+                        "path": "/userCenter/merchantManagement/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "path": "/equipment",
+        "icon": "profile",
+        "name": "equipmentManagement",
+        "routes": [
+            {
+                "name": "mapTrack",
+                "path": "/equipment/mapTrack",
+                "hideInMenu": true
+            },
+            {
+                "name": "equipmentCode",
+                "path": "/equipment/equipmentCode",
+                "routes": [
+                    {
+                        "name": "barcodeGenerator",
+                        "path": "/equipment/equipmentCode/barcodeGenerator"
+                    },
+                    {
+                        "name": "generateRecords",
+                        "path": "/equipment/equipmentCode/generateRecords"
+                    },
+                    {
+                        "name": "QRCodeRecords",
+                        "path": "/equipment/equipmentCode/QRCodeRecords"
+                    }
+                ]
+            },
+            {
+                "name": "electricCarManagement",
+                "path": "/equipment/electricCar",
+                "routes": [
+                    {
+                        "name": "electricCar",
+                        "path": "/equipment/electricCar"
+                    },
+                    {
+                        "name": "electricCarDetail",
+                        "path": "/equipment/electricCar/detail/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "electricCarLocus",
+                        "path": "/equipment/electricCar/locus/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            },
+            {
+                "name": "batteryManagement",
+                "path": "/equipment/battery",
+                "routes": [
+                    {
+                        "name": "smartBattery",
+                        "path": "/equipment/battery/smartBattery"
+                    },
+                    {
+                        "name": "smartBatteryDetail",
+                        "hideInMenu": true,
+                        "path": "/equipment/battery/smartBatteryDetail/:id"
+                    },
+                    {
+                        "name": "smartBatteryTrack",
+                        "hideInMenu": true,
+                        "path": "/equipment/battery/smartBatteryTrack/:id"
+                    },
+                    {
+                        "name": "smartBatteryState",
+                        "path": "/equipment/battery/smartBatteryState"
+                    },
+                    {
+                        "name": "alarmRecord",
+                        "path": "/equipment/battery/alarmRecord"
+                    },
+                    {
+                        "name": "upgradeRecord",
+                        "path": "/equipment/battery/upgradeRecord"
+                    },
+                    {
+                        "name": "parameterSetting",
+                        "path": "/equipment/battery/parameterSetting"
+                    },
+                    {
+                        "name": "operParameter",
+                        "hideInMenu": true,
+                        "path": "/equipment/battery/parameterSetting/:id"
+                    },
+                    {
+                        "name": "smartBatteryStateDetail",
+                        "hideInMenu": true,
+                        "path": "/equipment/battery/:id"
+                    }
+                ]
+            },
+            {
+                "name": "warning",
+                "path": "/equipment/warning",
+                "routes": [
+                    {
+                        "name": "statisticalStandards",
+                        "path": "/equipment/warning/statistical"
+                    },
+                    {
+                        "name": "lose",
+                        "path": "/equipment/warning/lose"
+                    },
+                    {
+                        "name": "speeding",
+                        "path": "/equipment/warning/speeding"
+                    },
+                    {
+                        "name": "lowPower",
+                        "path": "/equipment/warning/lowPower"
+                    },
+                    {
+                        "name": "offLine",
+                        "path": "/equipment/warning/offLine"
+                    },
+                    {
+                        "name": "afterSaleWarning",
+                        "path": "/equipment/warning/afterSale"
+                    },
+                    {
+                        "name": "temperatureRise",
+                        "path": "/equipment/warning/temperatureRise"
+                    },
+                    {
+                        "name": "lowTemperature",
+                        "path": "/equipment/warning/lowTemperature"
+                    },
+                    {
+                        "name": "arrears",
+                        "path": "/equipment/warning/arrears"
+                    },
+                    {
+                        "name": "stockAge",
+                        "path": "/equipment/warning/stockAge"
+                    },
+                    {
+                        "name": "inletCheck",
+                        "path": "/equipment/warning/inletCheck"
+                    },
+                    {
+                        "name": "dormancyRecord",
+                        "path": "/equipment/warning/dormancyRecord"
+                    },
+                    {
+                        "name": "beepAlarm",
+                        "path": "/equipment/warning/beepAlarm"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "path": "/rentManage",
+        "icon": "moneyCollect",
+        "name": "rentManage",
+        "routes": [
+            {
+                "name": "merchantRent",
+                "path": "/rentManage/merchantRent",
+                "routes": [
+                    {
+                        "name": "rentOrder",
+                        "path": "/rentManage/merchantRent/rentOrder"
+                    },
+                    {
+                        "name": "rentOrderDetail",
+                        "hideInMenu": true,
+                        "path": "/rentManage/merchantRent/rentOrderDetail/:id"
+                    },
+                    {
+                        "name": "rentOrderAudit",
+                        "hideInMenu": true,
+                        "path": "/rentManage/merchantRent/rentOrderAudit/:id"
+                    },
+                    {
+                        "name": "rentRefundOrder",
+                        "path": "/rentManage/merchantRent/rentRefundOrder"
+                    },
+                    {
+                        "name": "rentRefundOrderDetail",
+                        "hideInMenu": true,
+                        "path": "/rentManage/merchantRent/rentRefundOrderDetail/:id"
+                    },
+                    {
+                        "name": "rentRefundOrderAudit",
+                        "hideInMenu": true,
+                        "path": "/rentManage/merchantRent/rentRefundOrderAudit/:id"
+                    },
+                    {
+                        "name": "exchangeOrder",
+                        "path": "/rentManage/merchantRent/exchangeOrder"
+                    },
+                    {
+                        "name": "exchangeOrderDetail",
+                        "hideInMenu": true,
+                        "path": "/rentManage/merchantRent/exchangeOrderDetail/:id"
+                    }
+                ]
+            },
+            {
+                "name": "consumerRent",
+                "path": "/rentManage/consumerRent",
+                "routes": [
+                    {
+                        "name": "rental",
+                        "path": "/rentManage/consumerRent/rental"
+                    },
+                    {
+                        "name": "rentalDetail",
+                        "hideInMenu": true,
+                        "path": "/rentManage/consumerRent/rentalDetail/:id"
+                    },
+                    {
+                        "name": "rentRefund",
+                        "path": "/rentManage/consumerRent/rentRefund"
+                    },
+                    {
+                        "name": "rentRefundDetail",
+                        "hideInMenu": true,
+                        "path": "/rentManage/consumerRent/rentRefundDetail/:id"
+                    },
+                    {
+                        "name": "afterSales",
+                        "path": "/rentManage/consumerRent/afterSale"
+                    },
+                    {
+                        "name": "afterSalesDetail",
+                        "hideInMenu": true,
+                        "path": "/rentManage/consumerRent/afterSalesDetail/:id"
+                    },
+                    {
+                        "name": "rentalResale",
+                        "path": "/rentManage/consumerRent/rentalResale"
+                    },
+                    {
+                        "name": "extendRentrRecord",
+                        "path": "/rentManage/consumerRent/extendRentrRecord"
+                    },
+                    {
+                        "name": "rentalResaleDetail",
+                        "hideInMenu": true,
+                        "path": "/rentManage/consumerRent/:id"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "path": "/warehouse",
+        "icon": "home",
+        "name": "warehouse",
+        "routes": [
+            {
+                "name": "goodsInBound",
+                "path": "/warehouse/goodsInBound",
+                "routes": [
+                    {
+                        "name": "inBoundRecord",
+                        "path": "/warehouse/goodsInBound/inBoundRecord"
+                    },
+                    {
+                        "name": "inBoundSave",
+                        "path": "/warehouse/goodsInBound/add",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "inBoundDetail",
+                        "path": "/warehouse/goodsInBound/inBoundDetail/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            },
+            {
+                "name": "stockManage",
+                "path": "/warehouse/stockManage",
+                "routes": [
+                    {
+                        "name": "userStock",
+                        "path": "/warehouse/stockManage/userStock"
+                    },
+                    {
+                        "name": "userStockDetail",
+                        "path": "/warehouse/stockManage/userStockDetail/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "wholeStock",
+                        "path": "/warehouse/stockManage/wholeStock"
+                    }
+                ]
+            },
+            {
+                "name": "allotManage",
+                "path": "/warehouse/allotManage",
+                "routes": [
+                    {
+                        "name": "allotRecord",
+                        "path": "/warehouse/allotManage/allotRecord"
+                    },
+                    {
+                        "name": "userStockDetail",
+                        "path": "/warehouse/allotManage/allotManageDetail/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            },
+            {
+                "name": "choiceManage",
+                "path": "/warehouse/choiceManage",
+                "routes": [
+                    {
+                        "name": "choice",
+                        "path": "/warehouse/choiceManage/choice"
+                    },
+                    {
+                        "name": "choiceDetail",
+                        "path": "/warehouse/choiceManage/choiceDetail/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            },
+            {
+                "name": "warning",
+                "path": "/warehouse/warning",
+                "routes": [
+                    {
+                        "name": "setWarning",
+                        "path": "/warehouse/warning/setWarning"
+                    },
+                    {
+                        "name": "companyWarning",
+                        "path": "/warehouse/warning/companyWarning"
+                    },
+                    {
+                        "name": "merchantWarning",
+                        "path": "/warehouse/warning/merchantWarning"
+                    }
+                ]
+            },
+            {
+                "name": "distributor",
+                "path": "/warehouse/distributor",
+                "routes": [
+                    {
+                        "name": "stock",
+                        "path": "/warehouse/distributor/stock"
+                    },
+                    {
+                        "name": "entry",
+                        "path": "/warehouse/distributor/entry"
+                    },
+                    {
+                        "name": "entryDetail",
+                        "hideInMenu": true,
+                        "path": "/warehouse/distributor/entryDetail/:id"
+                    },
+                    {
+                        "name": "sale",
+                        "path": "/warehouse/distributor/sale"
+                    },
+                    {
+                        "name": "saleDetail",
+                        "hideInMenu": true,
+                        "path": "/warehouse/distributor/saleDetail/:id"
+                    },
+                    {
+                        "name": "afterSales",
+                        "path": "/warehouse/distributor/afterSales"
+                    },
+                    {
+                        "name": "afterSalesDetail",
+                        "hideInMenu": true,
+                        "path": "/warehouse/distributor/afterSalesDetail/:id"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "path": "/sweepCode",
+        "icon": "scan",
+        "name": "sweepCode",
+        "routes": [
+            {
+                "name": "openElectricity",
+                "path": "/sweepCode/openElectricity",
+                "routes": [
+                    {
+                        "name": "electricity",
+                        "path": "/sweepCode/openElectricity/electricity"
+                    },
+                    {
+                        "name": "grantApplication",
+                        "path": "/sweepCode/openElectricity/grantApplication"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "path": "/capital",
+        "icon": "payCircle",
+        "name": "capital",
+        "routes": [
+            {
+                "name": "join",
+                "path": "/capital/join",
+                "routes": [
+                    {
+                        "name": "platformFee",
+                        "path": "/capital/join/platformFee"
+                    },
+                    {
+                        "name": "warranty",
+                        "path": "/capital/join/warranty"
+                    },
+                    {
+                        "name": "franchiseFee",
+                        "path": "/capital/join/franchiseFee"
+                    }
+                ]
+            },
+            {
+                "name": "rent",
+                "path": "/capital/rent",
+                "routes": [
+                    {
+                        "name": "consumerRent",
+                        "path": "/capital/rent/consumerRent"
+                    },
+                    {
+                        "name": "consumerDeposit",
+                        "path": "/capital/rent/consumerDeposit"
+                    },
+                    {
+                        "name": "receipt",
+                        "path": "/capital/rent/receipt"
+                    }
+                ]
+            },
+            {
+                "name": "businessIncome",
+                "path": "/capital/businessIncome",
+                "routes": [
+                    {
+                        "name": "merchant",
+                        "path": "/capital/businessIncome/merchant"
+                    },
+                    {
+                        "name": "salesman",
+                        "path": "/capital/businessIncome/salesman"
+                    },
+                    {
+                        "name": "manager",
+                        "path": "/capital/businessIncome/manager"
+                    },
+                    {
+                        "name": "supplier",
+                        "path": "/capital/businessIncome/supplier"
+                    },
+                    {
+                        "name": "platform",
+                        "path": "/capital/businessIncome/platform"
+                    }
+                ]
+            },
+            {
+                "name": "businessCommission",
+                "path": "/capital/businessCommission",
+                "routes": [
+                    {
+                        "name": "basis",
+                        "path": "/capital/businessCommission/basis"
+                    },
+                    {
+                        "name": "additional",
+                        "path": "/capital/businessCommission/additional"
+                    }
+                ]
+            },
+            {
+                "name": "statement",
+                "path": "/capital/statement",
+                "routes": [
+                    {
+                        "name": "supplier",
+                        "path": "/capital/statement/supplier"
+                    },
+                    {
+                        "name": "merchant",
+                        "path": "/capital/statement/merchant"
+                    }
+                ]
+            },
+            {
+                "name": "generalLedger",
+                "path": "/capital/generalLedger",
+                "routes": [
+                    {
+                        "name": "accounting",
+                        "path": "/capital/generalLedger/accounting"
+                    },
+                    {
+                        "name": "editAccounting",
+                        "hideInMenu": true,
+                        "path": "/capital/generalLedger/:id"
+                    },
+                    {
+                        "name": "addAccounting",
+                        "hideInMenu": true,
+                        "path": "/capital/generalLedger/add"
+                    }
+                ]
+            },
+            {
+                "name": "receipt",
+                "path": "/capital/receipt",
+                "routes": [
+                    {
+                        "name": "crossChecking",
+                        "path": "/capital/receipt/cross"
+                    },
+                    {
+                        "name": "crossDetail",
+                        "hideInMenu": true,
+                        "path": "/capital/receipt/detail/:id"
+                    }
+                ]
+            },
+            {
+                "name": "depositWithdrawal",
+                "path": "/capital/depositWithdrawal",
+                "routes": [
+                    {
+                        "name": "deposit",
+                        "path": "/capital/depositWithdrawal/deposit"
+                    },
+                    {
+                        "name": "withdrawal",
+                        "path": "/capital/depositWithdrawal/withdrawal"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "content",
+        "path": "/content",
+        "icon": "read",
+        "routes": [
+            {
+                "name": "notification",
+                "path": "/content/notification",
+                "routes": [
+                    {
+                        "name": "announcement",
+                        "path": "/content/notification/announcement"
+                    },
+                    {
+                        "name": "systemInformation",
+                        "path": "/content/notification/systemInformation"
+                    }
+                ]
+            },
+            {
+                "name": "article",
+                "path": "/content/article",
+                "routes": [
+                    {
+                        "name": "helpDoc",
+                        "path": "/content/article/helpDoc"
+                    },
+                    {
+                        "name": "addHelpDoc",
+                        "hideInMenu": true,
+                        "path": "/content/article/addHelpDoc"
+                    },
+                    {
+                        "name": "editHelpDoc",
+                        "hideInMenu": true,
+                        "path": "/content/article/editHelpDoc/:id"
+                    }
+                ]
+            },
+            {
+                "name": "customerService",
+                "path": "/content/customerService",
+                "routes": [
+                    {
+                        "name": "customerServiceRecord",
+                        "path": "/content/customerService/customerServiceRecord"
+                    },
+                    {
+                        "name": "addCustomerServiceRecord",
+                        "hideInMenu": true,
+                        "path": "/content/customerService/addCustomerServiceRecord/add"
+                    },
+                    {
+                        "name": "editCustomerServiceRecord",
+                        "hideInMenu": true,
+                        "path": "/content/customerService/editCustomerServiceRecord/:id"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "path": "/insurance",
+        "icon": "insurance",
+        "name": "insuranceManage",
+        "routes": [
+            {
+                "name": "companyCover",
+                "path": "/insurance/companyCover",
+                "routes": [
+                    {
+                        "name": "coverEntry",
+                        "path": "/insurance/companyCover/coverRecord/add"
+                    },
+                    {
+                        "name": "coverRecord",
+                        "path": "/insurance/companyCover/coverRecord"
+                    },
+                    {
+                        "name": "coverRecordDetail",
+                        "path": "/insurance/companyCover/coverRecord/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "compCoverSearch",
+                        "path": "/insurance/companyCover/compCoverSearch"
+                    },
+                    {
+                        "name": "compCoverSearchDetail",
+                        "path": "/insurance/companyCover/compCoverSearch/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "renewalReminder",
+                        "path": "/insurance/companyCover/renewalReminder"
+                    }
+                ]
+            },
+            {
+                "name": "merchantCover",
+                "path": "/insurance/merchantCover",
+                "routes": [
+                    {
+                        "name": "merchantCoverSearch",
+                        "path": "/insurance/merchantCover/merchantCoverSearch"
+                    },
+                    {
+                        "name": "merchantCoverDetail",
+                        "path": "/insurance/merchantCover/merchantCoverDetail/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            },
+            {
+                "name": "companyClaims",
+                "path": "/insurance/companyClaims",
+                "routes": [
+                    {
+                        "name": "missingAlarmRecord",
+                        "path": "/insurance/companyClaims/missingAlarm"
+                    },
+                    {
+                        "name": "saveMissingAlarm",
+                        "path": "/insurance/companyClaims/saveMissing/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "compClaimsProcessing",
+                        "path": "/insurance/companyClaims/compClaimsProcessing"
+                    },
+                    {
+                        "name": "saveCompClaimsProcessing",
+                        "path": "/insurance/companyClaims/saveClaimsProcessing/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            },
+            {
+                "name": "supplierCover",
+                "path": "/insurance/supplierCover",
+                "routes": [
+                    {
+                        "name": "supplierCoverRecord",
+                        "path": "/insurance/supplierCover/coverRecord"
+                    },
+                    {
+                        "name": "supplierCoverEntry",
+                        "path": "/insurance/supplierCover/coverRecord/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "renewalReminder",
+                        "path": "/insurance/supplierCover/renewalReminder"
+                    }
+                ]
+            },
+            {
+                "name": "userMiss",
+                "path": "/insurance/userMiss",
+                "routes": [
+                    {
+                        "name": "userMissRecord",
+                        "path": "/insurance/userMiss/userMissRecord"
+                    },
+                    {
+                        "name": "userMissDetail",
+                        "path": "/insurance/userMiss/userMissDetail/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            },
+            {
+                "name": "merchantMiss",
+                "path": "/insurance/merchantMiss",
+                "routes": [
+                    {
+                        "name": "merchantMissRecord",
+                        "path": "/insurance/merchantMiss/merchantMissRecord"
+                    },
+                    {
+                        "name": "merchantMissDetail",
+                        "path": "/insurance/merchantMiss/merchantMissDetail/:id",
+                        "hideInMenu": true
+                    }
+                ]
+            },
+            {
+                "name": "userCover",
+                "path": "/insurance/userCover",
+                "routes": [
+                    {
+                        "name": "userCoverRecord",
+                        "path": "/insurance/userCover/userCoverRecord"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "monitor",
+        "path": "/monitor",
+        "icon": "laptop",
+        "routes": [
+            {
+                "name": "distributed",
+                "path": "/monitor/distributed",
+                "routes": [
+                    {
+                        "name": "productSmartMonitor",
+                        "path": "/monitor/distributed/productSmartMonitor"
+                    },
+                    {
+                        "name": "productMonitorDetail",
+                        "hideInMenu": true,
+                        "path": "/monitor/distributed/productMonitor"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "supplier_employee",
+        "path": "/employee",
+        "icon": "team"
+    },
+    {
+        "name": "edit_supplier_employee",
+        "path": "/employee/:id/add",
+        "hideInMenu": true
+    },
+    {
+        "name": "marketing",
+        "icon": "fundProjectionScreen",
+        "path": "/marketing",
+        "routes": [
+            {
+                "name": "invitation",
+                "path": "/marketing/invitation",
+                "routes": [
+                    {
+                        "name": "activity",
+                        "path": "/marketing/invitation/activity"
+                    },
+                    {
+                        "name": "statistics",
+                        "path": "/marketing/invitation/statistics"
+                    },
+                    {
+                        "name": "editActivity",
+                        "hideInMenu": true,
+                        "path": "/marketing/invitation/:id"
+                    },
+                    {
+                        "name": "activityDetail",
+                        "hideInMenu": true,
+                        "path": "/marketing/invitation/detail/:id"
+                    }
+                ]
+            },
+            {
+                "name": "couponManage",
+                "path": "/marketing/couponManage",
+                "routes": [
+                    {
+                        "name": "couponTheme",
+                        "path": "/marketing/couponManage/couponTheme"
+                    },
+                    {
+                        "name": "couponList",
+                        "path": "/marketing/couponManage/couponList"
+                    },
+                    {
+                        "name": "saveCoupon",
+                        "path": "/marketing/couponManage/saveCoupon/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "couponDetail",
+                        "path": "/marketing/couponManage/couponDetail/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "useRecord",
+                        "path": "/marketing/couponManage/useRecord"
+                    }
+                ]
+            },
+            {
+                "name": "integralManage",
+                "path": "/marketing/integralManage",
+                "routes": [
+                    {
+                        "name": "integralGetRule",
+                        "path": "/marketing/integralManage/getRule"
+                    },
+                    {
+                        "name": "integralExchangeRule",
+                        "path": "/marketing/integralManage/changeRule"
+                    },
+                    {
+                        "name": "integralShop",
+                        "path": "/marketing/integralManage/integralShop"
+                    },
+                    {
+                        "name": "integralDetail",
+                        "path": "/marketing/integralManage/integralDetail/:id",
+                        "hideInMenu": true
+                    },
+                    {
+                        "name": "integralGetRecord",
+                        "path": "/marketing/integralManage/getRecord"
+                    },
+                    {
+                        "name": "integralChangeRecord",
+                        "path": "/marketing/integralManage/changeRecord"
+                    },
+                    {
+                        "name": "integralCashRecord",
+                        "path": "/marketing/integralManage/cashRecord"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "report",
+        "path": "/report",
+        "icon": "line-chart",
+        "routes": [
+            {
+                "name": "user",
+                "path": "/report/user",
+                "routes": [
+                    {
+                        "name": "activity",
+                        "path": "/report/user/activity"
+                    },
+                    {
+                        "name": "consumption",
+                        "path": "/report/user/consumption"
+                    },
+                    {
+                        "name": "userArea",
+                        "path": "/report/user/area"
+                    },
+                    {
+                        "name": "mileage",
+                        "path": "/report/user/mileage"
+                    },
+                    {
+                        "name": "breach",
+                        "path": "/report/user/breach"
+                    }
+                ]
+            },
+            {
+                "name": "marketing",
+                "path": "/report/marketing",
+                "routes": [
+                    {
+                        "name": "promote",
+                        "path": "/report/marketing/promote"
+                    },
+                    {
+                        "name": "coupon",
+                        "path": "/report/marketing/coupon"
+                    },
+                    {
+                        "name": "integral",
+                        "path": "/report/marketing/integral"
+                    }
+                ]
+            },
+            {
+                "name": "performance",
+                "path": "/report/performance",
+                "routes": [
+                    {
+                        "name": "rent",
+                        "path": "/report/performance/rent"
+                    },
+                    {
+                        "name": "insurance",
+                        "path": "/report/performance/insurance"
+                    },
+                    {
+                        "name": "rentRate",
+                        "path": "/report/performance/rentRate"
+                    },
+                    {
+                        "name": "sale",
+                        "path": "/report/performance/sale"
+                    }
+                ]
+            },
+            {
+                "name": "lifeCycle",
+                "path": "/report/lifeCycle",
+                "routes": [
+                    {
+                        "name": "residual",
+                        "path": "/report/lifeCycle/residual"
+                    },
+                    {
+                        "name": "depreciation",
+                        "path": "/report/lifeCycle/depreciation"
+                    },
+                    {
+                        "name": "postSale",
+                        "path": "/report/lifeCycle/postSale"
+                    }
+                ]
+            }
+        ]
+    }
+]
